@@ -16,15 +16,23 @@ public class PrincipalComputadoras {
 	 */
 	public static void main(String[] args) {
 		// Necesito ensamblar 2 computadoras
+                 Ensamblador ensamblador = new Ensamblador();
 		// AsusROGE
-		Computador roge = new Computador(/*todos los atributos*/);
+                
+               
+                RogComputadorBuilder roge = new RogComputadorBuilder();
+		ensamblador.setBuilderComputador(roge);
+                ensamblador.construirComputador();
+                
 		
 		// AsusZenbook
-		Computador zenbook = new Computador(/*todos los atributos*/);
-		
+		ZenComputadorBuilder zen = new ZenComputadorBuilder();
+		ensamblador.setBuilderComputador(zen);
+                ensamblador.construirComputador();
 		//Mostrar las caracteristicas de ambas computadoras 
+                Computador computador1 = ensamblador.getComputador();
 		roge.toString();
-		zenbook.toString();
+                zen.toString();
 
 	}
 

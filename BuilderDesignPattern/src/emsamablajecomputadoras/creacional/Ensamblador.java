@@ -19,8 +19,8 @@ public class Ensamblador {
         
     }
 
-    public BuilderComputador getBuilderComputador() {
-        return builderComputador;
+    public Computador getComputador() {
+        return builderComputador.getComputador();
     }
 
     public void setBuilderComputador(BuilderComputador builderComputador) {
