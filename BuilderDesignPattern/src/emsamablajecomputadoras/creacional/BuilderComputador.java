@@ -21,6 +21,6 @@ public abstract class BuilderComputador {
     public abstract void crearRam();
     public abstract void crearAlmacenamiento();
     public abstract void crearMainboard();
-    public abstract void crearComputador();
+    public abstract void crearOs();
     
 }

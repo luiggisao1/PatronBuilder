@@ -13,27 +13,37 @@ public class RogComputadorBuilder extends BuilderComputador{
 
     @Override
     public void crearModelo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        computador.setModelo("ROG");
+    }    
 
     @Override
     public void crearRam() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.setRam(32);
     }
 
     @Override
     public void crearAlmacenamiento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.setAlmacenamiento(1000);
     }
 
     @Override
     public void crearMainboard() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.getPlaca().setModelo("Strix");
+        computador.getPlaca().setNumeracion("x99");
     }
 
     @Override
     public void crearComputador() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
+
+    @Override
+    public void crearOs() {
+        computador.getOs().setArquitectura(64);
+        computador.getOs().setNombre("Windows PRO");
+        computador.getOs().setVersion("10");
+    }
+    
+   
     
 }
