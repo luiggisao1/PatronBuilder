@@ -23,4 +23,8 @@ public abstract class BuilderComputador {
     public abstract void crearMainboard();
     public abstract void crearOs();
     
+    public void createComputador(){
+        computador = new Computador();
+    }
+    
 }

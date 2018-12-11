@@ -16,6 +16,12 @@ public class Ensamblador {
     
     
     public void construirComputador(){
+        builderComputador.createComputador();
+        builderComputador.crearAlmacenamiento();
+        builderComputador.crearMainboard();
+        builderComputador.crearModelo();
+        builderComputador.crearOs();
+        builderComputador.crearRam();
         
     }
 
