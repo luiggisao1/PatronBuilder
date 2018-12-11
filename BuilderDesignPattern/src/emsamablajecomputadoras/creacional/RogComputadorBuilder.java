@@ -32,10 +32,6 @@ public class RogComputadorBuilder extends BuilderComputador{
         computador.getPlaca().setNumeracion("x99");
     }
 
-    @Override
-    public void crearComputador() {
-        
-    }
 
     @Override
     public void crearOs() {

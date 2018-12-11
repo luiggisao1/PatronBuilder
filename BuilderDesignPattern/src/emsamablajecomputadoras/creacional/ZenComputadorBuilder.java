@@ -13,27 +13,30 @@ public class ZenComputadorBuilder extends BuilderComputador{
 
     @Override
     public void crearModelo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.setModelo("Zenbook");
     }
 
     @Override
     public void crearRam() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.setRam(16);
     }
 
     @Override
     public void crearAlmacenamiento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.setAlmacenamiento(500);
     }
 
     @Override
     public void crearMainboard() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        computador.getPlaca().setModelo("Prime");
+        computador.getPlaca().setNumeracion("Z370");
     }
 
     @Override
-    public void crearComputador() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void crearOs() {
+   
+        computador.getOs().setArquitectura(64);
+        computador.getOs().setNombre("Windows Home");
+        computador.getOs().setVersion("10");
     }
-    
 }
