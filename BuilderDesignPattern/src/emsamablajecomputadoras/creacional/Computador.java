@@ -89,31 +89,17 @@ public class Computador {
     public void setCoolerExterno(boolean coolerExterno) {
         this.coolerExterno = coolerExterno;
     }
+
+    @Override
+    public String toString() {
+        return "Computador{" + "ram=" + ram + ", tipoRam=" + tipoRam + ", os=" + os + ", almacenamiento=" + almacenamiento + ", tipoAlmacenamiento=" + tipoAlmacenamiento + ", placa=" + placa + ", marca=" + marca + ", modelo=" + modelo + ", coolerExterno=" + coolerExterno + '}';
+    }
     
     
 
       
-    @Override
-    public String toString(){
-        return "Especificiaciones Tecnicas:\n";
-               
-    }
+   
 
-	public String getTipoRam() {
-		return tipoRam;
-	}
-
-	public void setTipoRam(String tipoRam) {
-		this.tipoRam = tipoRam;
-	}
-
-	public String getTipoAlmacenamiento() {
-		return tipoAlmacenamiento;
-	}
-
-	public void setTipoAlmacenamiento(String tipoAlmacenamiento) {
-		this.tipoAlmacenamiento = tipoAlmacenamiento;
-	}
     
     
     

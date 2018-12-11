@@ -23,6 +23,7 @@ public class PrincipalComputadoras {
                 RogComputadorBuilder roge = new RogComputadorBuilder();
 		ensamblador.setBuilderComputador(roge);
                 ensamblador.construirComputador();
+                Computador computador1 = ensamblador.getComputador();
                 
 		
 		// AsusZenbook
@@ -30,9 +31,11 @@ public class PrincipalComputadoras {
 		ensamblador.setBuilderComputador(zen);
                 ensamblador.construirComputador();
 		//Mostrar las caracteristicas de ambas computadoras 
-                Computador computador1 = ensamblador.getComputador();
-		roge.toString();
-                zen.toString();
+                
+                System.out.println(computador1);
+                
+                Computador computador2 = ensamblador.getComputador();
+                System.out.println(computador2);
 
 	}
 
