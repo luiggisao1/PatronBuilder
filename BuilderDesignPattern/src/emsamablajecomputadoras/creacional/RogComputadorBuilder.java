@@ -10,7 +10,7 @@ package emsamablajecomputadoras.creacional;
  * @author Administrador
  */
 public class RogComputadorBuilder extends BuilderComputador{
-
+    
     @Override
     public void crearModelo() {
         computador.setModelo("ROG");
@@ -28,16 +28,15 @@ public class RogComputadorBuilder extends BuilderComputador{
 
     @Override
     public void crearMainboard() {
-        computador.getPlaca().setModelo("Strix");
-        computador.getPlaca().setNumeracion("x99");
+        Mainboard placa = new Mainboard("Strix","99");
+       
     }
 
 
     @Override
     public void crearOs() {
-        computador.getOs().setArquitectura(64);
-        computador.getOs().setNombre("Windows PRO");
-        computador.getOs().setVersion("10");
+        SistemaOperativo os = new SistemaOperativo ("Windows PRO",64,"10");
+       
     }
     
    

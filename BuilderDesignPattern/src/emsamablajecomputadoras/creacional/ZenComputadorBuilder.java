@@ -28,15 +28,14 @@ public class ZenComputadorBuilder extends BuilderComputador{
 
     @Override
     public void crearMainboard() {
-        computador.getPlaca().setModelo("Prime");
-        computador.getPlaca().setNumeracion("Z370");
+        Mainboard placa = new Mainboard("Prime","Z370");
+        
     }
 
     @Override
     public void crearOs() {
-   
-        computador.getOs().setArquitectura(64);
-        computador.getOs().setNombre("Windows Home");
-        computador.getOs().setVersion("10");
+           SistemaOperativo os = new SistemaOperativo ("Windows Home",64,"10");
+
+       
     }
 }

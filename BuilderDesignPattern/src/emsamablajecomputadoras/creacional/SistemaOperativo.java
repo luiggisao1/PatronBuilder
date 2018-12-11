@@ -21,6 +21,8 @@ public class SistemaOperativo {
         this.version = version;
     }
 
+    
+
     public String getNombre() {
         return nombre;
     }
